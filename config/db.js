@@ -7,7 +7,6 @@ function connectDB() {
         useUnifiedTopology: true,
        
     };
-    
     mongoose.connect(process.env.MONGO_CONNECTION_URL, connectionParams);
     const connection = mongoose.connection;
     connection.once('open', () => {
