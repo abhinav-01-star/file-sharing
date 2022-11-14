@@ -19,7 +19,7 @@ const baseURL = "https://inshare-a2.herokuapp.com";
 const uploadURL = `${baseURL}/api/files`;
 const emailURL = `${baseURL}/api/files/send`;
 
-const maxAllowedSize = 100 * 1024 * 1024; //100mb
+const maxAllowedSize = 300* 1024 * 1024; //100mb
 
 
 browseBtn.addEventListener("click", () => {
@@ -66,7 +66,7 @@ fileInput.addEventListener("change", () => {
   uploadFile();
 });
 
-// sharing container listenrs
+// sharing container listeners
 copyURLBtn.addEventListener("click", () => {
   fileURL.select();
   document.execCommand("copy");
